@@ -1,0 +1,14 @@
+html
+    head
+        title #{title}
+        link(rel="stylesheet", href="css/style.css")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap")
+    body
+        div(class = 'container')
+            form( id="formulario" action="/new-todo" method="POST")
+                div(class="form__item")
+                    input(type="text" id="input-todo" class="form__item__input" name="name" placeholder="Agregar nueva tarea" autocomplete="off")
+            div(class="show-list")
+
+        script(src="/js/main.js")
+            
